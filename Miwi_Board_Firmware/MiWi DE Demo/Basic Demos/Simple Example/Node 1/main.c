@@ -105,7 +105,7 @@
 // on, the operating channel will be one of the channels available with
 // least amount of energy (or noise).
 /*************************************************************************/
-BYTE myChannel = CHANNEL_24;
+BYTE myChannel = CHANNEL_11;
 
 BYTE tempAddr[8] = {0xAA,0xAA,0xAA,0xAA,0xAA,0xAA,0xAA,0xAA};
 extern DWORD_VAL OutgoingFrameCounter;
@@ -180,7 +180,7 @@ int main(void)
     // Set default channel
     myChannel = (PORTA & 0x3C);
     myChannel >>= 2;
-    myChannel += 11;
+	myChannel = 11;
     if( MiApp_SetChannel(myChannel) == FALSE )
     {
         //DemoOutput_ChannelError(myChannel);

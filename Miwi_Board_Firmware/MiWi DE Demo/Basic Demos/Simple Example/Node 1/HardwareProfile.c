@@ -103,7 +103,6 @@
     #pragma config CCP2MX = PORTBE		//CCP2 input/output is multiplexed with RB3
     #pragma config LVP = OFF			//Single-Supply ICSP disabled
     #pragma config DEBUG = ON			//Background debugger enabled, RB6 and RB7 are dedicated to In-Circuit Debug
-	#pragma config XINST = ON			//Instruction set extension and Indexed Addressing mode enabled 
 #elif defined(__18F87J11)
 
     #pragma config FOSC = HSPLL, WDTEN = OFF, WDTPS = 128, XINST = ON  
@@ -688,7 +687,7 @@ void BoardInit(void)
         //LATA = 0x04;
 
         // Make RA0, RA1, RA2 and RA4 as outputs.
-        TRISA = 0xF8;
+        //TRISA = 0xF8;
 
         PHY_CS = 1;             //deselect the MRF24J40
         PHY_CS_TRIS = 0;        //make chip select an output

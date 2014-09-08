@@ -137,7 +137,7 @@
 #define EUI_3 0x55
 #define EUI_2 0x66
 #define EUI_1 0x77
-#define EUI_0 0x01
+#define EUI_0 0x02
 
 /*********************************************************************/
 // TX_BUFFER_SIZE defines the maximum size of application payload
